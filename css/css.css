@@ -1,0 +1,220 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%; 
+    margin: auto;
+    height: 50px;
+}
+
+/* Header */
+.header{
+    background-color: #232323;
+    height: 80px;
+    padding-top: 30px;
+    border-bottom: coral 8px;
+}
+  
+.header .nav .menu-atual a, 
+.header span{
+    /* Cor do texto */
+    color: sandybrown;
+}
+
+.title-header img{
+    float: left;
+    width: 67px;
+    margin: -62px 0px 0px -82px;
+
+
+}
+  
+.title-header h1{
+    font-family: 'Syne Mono', monospace;
+
+}  
+  
+  
+  /* NAV */
+.nav ul
+{
+    margin: 0;
+}
+  
+.title-header{
+    float: left;
+    color: #ffffff;
+}
+  
+.nav{
+    float: right;
+}
+  
+.nav a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+  
+.nav li{
+    display: inline-block;
+    padding: 20px;
+    padding: 10px 20px 0 20px;
+}
+  /* Fim NAV */
+  
+  /* SHOWCASE */
+.showcase{
+    background-image: url(../img/mlk\ feio.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    background-attachment: fixed;
+    
+    
+}
+
+
+.botão{
+    margin-top: 396px;
+    margin-left: 200px;
+    width: 130px;
+    height: 80px;
+    font-size: 22px;
+    border-radius: 4%;
+    color: whitesmoke;
+    background-color: black;
+}
+  
+.showcase h1{
+    margin: 0;  
+    font-size: 55px;
+    padding-top: 100px;
+}
+  
+.showcase p{
+    font-size: 22px;
+}
+  /* Fim SHOWCASE */
+
+/* Primeira parte*/
+.box-item {
+    padding-top: 70px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.box-item p {
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+    font-size: 20px;
+}
+
+.box-item h1 {
+    font-size: 40px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    height: 100px;
+    width: 600px;
+    padding: 30px;
+
+}
+
+.box-item p {
+    text-align: center;
+
+}
+/* Fim Primeira parte*/
+
+/* Show case 2*/
+.showcase2{
+    background-image: url(../img/manto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+    min-height: 1200px;
+    background-attachment: fixed;
+    
+}
+  
+.showcase h1{
+    margin: 0;  
+    font-size: 55px;
+    padding-top: 100px;
+}
+  
+.showcase p{
+    font-size: 22px;
+}
+
+.showcase3{
+    background-image: url(../img/camisa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+    min-height: 1200px;
+    background-attachment: fixed;
+    
+}
+  
+.showcase h1{
+    margin: 0;  
+    font-size: 55px;
+    padding-top: 100px;
+}
+  
+.showcase p{
+    font-size: 22px;
+}
+
+/*footer*/
+.footer img {
+    width: 40px;
+}
+
+
+.footer li {
+    display: inline-block;
+    padding: 20px 30px 0px 30px;
+
+}
+
+.footer ul {
+    float: right;
+    margin-right: 40%;
+}
+
+.footer {
+    background-color: rgba(157, 165, 207, 0.315);
+    height: 150px;
+}
+
+.fale_conosco {
+    float: right;
+    padding-left: 300px;
+}
+
+.fale_conosco .fale_block {
+    display: inline-block;
+    padding: 20px 20px 0px 20px;
+}
+/*fim do footer*/
+
+.baixo{
+    padding-left: 600px;
+}
