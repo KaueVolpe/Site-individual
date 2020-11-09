@@ -117,7 +117,7 @@ html {
 
 .box-item p {
     position: relative;
-    left: 100px;
+    padding: 15px;
     bottom: 60px;
     font-size: 20px;
 }
@@ -125,8 +125,8 @@ html {
 .box-item h1 {
     font-size: 40px;
     text-align: center;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
     height: 100px;
     width: 600px;
     padding: 30px;
@@ -217,4 +217,42 @@ html {
 
 .baixo{
     padding-left: 600px;
+}
+
+
+/*Organizadas*/
+.organizada1{
+    background-image: url(../img/gavioes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 900px;
+    background-attachment: fixed;
+}
+
+.box-org {
+    padding-top: 70px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.box-org p {
+    position: relative;
+    
+    bottom: 60px;
+    font-size: 20px;
+}
+
+.box-org h1 {
+    font-size: 40px;
+    text-align: center;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    height: 100px;
+    width: 650px;
+    padding: 30px;
+   
+}
+
+.box-org p {
+    text-align: center;
 }
