@@ -264,3 +264,77 @@ html {
 .box-org p {
     text-align: center;
 }
+/* fim organizada 1 */
+.organizada2{
+    background-image: url(../img/camisa12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 900px;
+    background-attachment: fixed;
+}
+
+.box-org {
+    padding-top: 70px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.box-org p {
+    position: relative;
+    
+    bottom: 60px;
+    font-size: 20px;
+}
+
+.box-org h1 {
+    font-size: 40px;
+    text-align: center;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    height: 100px;
+    width: 650px;
+    padding: 30px;
+   
+}
+
+.box-org p {
+    text-align: center;
+}
+
+/* fim organizada 2 */
+
+.organizada3{
+    background-image: url(../img/pavilhao9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 900px;
+    background-attachment: fixed;
+}
+
+.box-org {
+    padding-top: 70px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.box-org p {
+    position: relative;
+    
+    bottom: 60px;
+    font-size: 20px;
+}
+
+.box-org h1 {
+    font-size: 40px;
+    text-align: center;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    height: 100px;
+    width: 650px;
+    padding: 30px;
+   
+}
+
+.box-org p {
+    text-align: center;
+}
