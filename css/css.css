@@ -341,35 +341,68 @@ html {
 
 /* seja socio*/
 
+.caixacadastro{
+    background-color: lightslategrey;
+    width: 197px;
+    padding: 40px;
+    border-radius: 23px;
+    align-items: center;
+    float: right;
+    margin-top: 73px;
+    margin-left: 38%;
+    padding-top: 69px;
+}
+
+.caixacadastro button {
+ width: 100px;
+ height: 40px;
+ border: none;
+ padding: 10px 20px;
+ font-size: 15px;
+ border-radius: 7px;
+ margin-top: 20px;
+ font-family: 'Anton', sans-serif;
+ background-color: black;
+ color: white;
+ margin-left: 41px;
+}
+.caixacadastro h2{
+text-align: center;
+margin: 20px 0 30px;
+
+}
+
 .caixalogin{
     background-color: lightslategrey;
     width: 197px;
     padding: 40px;
     border-radius: 23px;
     align-items: center;
-    float: left;
+    
     margin-top: 73px;
-    margin-left: 38%;
+    
     padding-top: 69px;
 }
 
 .caixalogin button {
-width: 100px;
-height: 40px;
-border: none;
-padding: 10px 20px;
-font-size: 15px;
-border-radius: 7px;
-margin-top: 20px;
-font-family: 'Anton', sans-serif;
-background-color: black;
-color: white;
-margin-left: 41px;
+ width: 100px;
+ height: 40px;
+ border: none;
+ padding: 10px 20px;
+ font-size: 15px;
+ border-radius: 7px;
+ margin-top: 20px;
+ font-family: 'Anton', sans-serif;
+ background-color: black;
+ color: white;
+ margin-left: 41px;
 }
 .caixalogin h2{
-text-align: center;
-margin: 20px 0 30px;
+ text-align: center;
+ margin: 20px 0 30px;
 
 }
+
+
 
 
