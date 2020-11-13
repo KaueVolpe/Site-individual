@@ -15,14 +15,18 @@ html {
     width: 80%; 
     margin: auto;
     height: 50px;
+    border-bottom: red;
 }
 
 /* Header */
 .header{
     background-color: #232323;
-    height: 80px;
+    height: 70px;
     padding-top: 30px;
     border-bottom: coral 8px;
+    margin: 0;
+    
+    border-radius: 5%;
 }
   
 .header .nav .menu-atual a, 
@@ -342,15 +346,15 @@ html {
 /* seja socio*/
 
 .caixacadastro{
-    background-color: lightslategrey;
+    background-color: white;
     width: 197px;
     padding: 40px;
-    border-radius: 23px;
+    border-radius: 15px;
     align-items: center;
     float: right;
     margin-top: 73px;
-    margin-left: 38%;
     padding-top: 69px;
+    margin-right: 250px;
 }
 
 .caixacadastro button {
@@ -360,7 +364,7 @@ html {
  padding: 10px 20px;
  font-size: 15px;
  border-radius: 7px;
- margin-top: 20px;
+ 
  font-family: 'Anton', sans-serif;
  background-color: black;
  color: white;
@@ -373,15 +377,15 @@ margin: 20px 0 30px;
 }
 
 .caixalogin{
-    background-color: lightslategrey;
+    background-color: white;
     width: 197px;
     padding: 40px;
-    border-radius: 23px;
+    border-radius: 15px;
     align-items: center;
-    
+    float: left;
     margin-top: 73px;
-    
     padding-top: 69px;
+    margin-left: 250px;
 }
 
 .caixalogin button {
@@ -397,11 +401,22 @@ margin: 20px 0 30px;
  color: white;
  margin-left: 41px;
 }
+
 .caixalogin h2{
  text-align: center;
  margin: 20px 0 30px;
 
 }
+
+.tudo{
+ background-image: url(../img/torcida.jpg);
+ width: 100%;
+ height: 700px;
+ margin:0;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
 
 
 
