@@ -175,6 +175,9 @@ html {
     font-size: 22px;
 }
 
+/* Fim segunda parte*/
+
+/* Show case 3*/
 .showcase3{
     background-image: url(../img/camisa.jpg);
     background-size: cover;
@@ -187,18 +190,6 @@ html {
 }
 
 
-
-.showcasejogo{
-    background-image: url(../img/fundojogo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color:white;
-    text-align: center;
-    min-height: 600px;
-    background-attachment: fixed;
-    
-}
-  
 .showcase h1{
     margin: 0;  
     font-size: 55px;
@@ -208,43 +199,45 @@ html {
 .showcase p{
     font-size: 22px;
 }
+/* Fim terceira parte*/
 
-/*footer*/
-.footer img {
-    width: 40px;
+
+/*começo jogo*/
+.showcasejogo{
+    background-image: url(../img/fundojogo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+    min-height: 600px;
+    background-attachment: fixed;
+  
+    
 }
 
 
-.footer li {
-    display: inline-block;
-    padding: 20px 30px 0px 30px;
+.containerjogo h1{
+
+    padding-top: 250px;
+
 
 }
 
-.footer ul {
-    float: right;
-    margin-right: 40%;
-}
 
-.footer {
-    background-color: rgba(157, 165, 207, 0.315);
-    height: 150px;
-}
+/* Fim jogo*/
+  
 
-.fale_conosco {
-    float: right;
-    padding-left: 300px;
-}
 
-.fale_conosco .fale_block {
-    display: inline-block;
-    padding: 20px 20px 0px 20px;
-}
-/*fim do footer*/
+
 
 .baixo{
-    padding-left: 600px;
+    padding-left: 550px;
 }
+
+
+
+
+
 
 
 /*Organizadas*/
@@ -375,12 +368,9 @@ html {
     margin-top: 140px;
     padding-top: 69px;
     margin-right: 230px;
+    border-bottom: red 8px;
 }
 
-campo h3{
-margin-top: 20px;
-
-}
 
 .caixacadastro button {
  width: 100px;
@@ -411,13 +401,14 @@ margin: 20px 0 30px;
     margin-top: 140px;
     padding-top: 69px;
     margin-left: 250px;
+    border-bottom: red 8px;
 }
 
 .caixalogin button {
  width: 100px;
  height: 40px;
  border: none;
- padding: 10px 20px;
+ padding: 10px 5px;
  font-size: 15px;
  border-radius: 7px;
  margin-top: 20px;
@@ -444,31 +435,27 @@ margin: 20px 0 30px;
 
 /* Historia */
 
-.box-historia {
+.combo {
+    background-image: url(../img/fundocombo.jpg);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 30px;
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
     
+}
+
+.combo2{
+    padding-top: 70px;
     width: 50%;
     margin: 0 auto;
-}
-
-.box-historia p {
+    position: relative;
+    bottom: 60px;
    
-    
-    
-    font-size: 20px;
-}
-
-.box-historia h1 {
-    font-size: 40px;
-    text-align: center;
-    
-    height: 100px;
-    width: 650px;
-    padding: 30px;
-   
-}
-
-.box-historia p {
-    text-align: center;
 }
 
 .video{

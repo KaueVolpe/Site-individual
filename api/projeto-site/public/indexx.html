@@ -34,9 +34,9 @@
         <div class="container">
         </div>
     </div>
-    <!-- fim SHOW CASE -->
+    
 
-    <!--2º parte da página-->
+    
     <div class="segundo">
         <div class="box-item">
             <h1>Torcida do timão:</h1>
@@ -50,11 +50,12 @@
 
         </div>
     </div>
+    <!-- fim SHOW CASE -->
 
+<!--2º parte da página-->
+    
 
-    <!-- fim 2º parte da página-->
-
-    <!--3º parte da página-->
+    
     <div class="showcase2">
 
         <div class="container">
@@ -76,7 +77,9 @@
 
         </div>
     </div>
+    <!-- fim 2º parte da página-->
 
+    <!--3º parte da página-->
     <div class="showcase3">
         <div class="container">
             <h1></h1>
@@ -101,23 +104,22 @@
 
         </div>
     </div>
+    <!-- fim 3º parte da página-->
 
-    <div class="showcasejogo">
-        <div class="container">
-            <h1>Vamos Jogar???</h1>
+    <div class="showcasejogo"> 
+        <div class="containerjogo">
+            <h1>Vamos Jogar???</h1> <br> <br>
             <input id="anos" placeholder="Digite sua idade" type="text">
             <button onclick="ver()">Verificar</button>
-            <img id="noiva" src="noivaa.jpg" alt="" style="display:none;">
-            <img id="bravo" src="bravoo.jpg" alt="" style="display:none;">
         </div>
     </div>
 
-    
+
 
 
 
     <div class="baixo">
-        <h5>copyright &copy; KAUÊ VOLPE todos os direitos reservados</h5>
+        <h5>COPRIGHT &copy; KAUÊ VOLPE TODOS OS DIREITOS RESERVADOS</h5>
     </div>
 </body>
 
@@ -129,13 +131,31 @@
 
 <script>
     function ver() {
-        if (anos.value >= 5 && kilos.value >= 300 && dias.value <= 5) {
-            alert("Minha filha será sua");
-            noiva.style = 'display: block;';
+        if (anos.value >= 1965 && anos.value <= 1974) {
+            alert('Rivelino')
+
+        } else if (anos.value >= 1978 && anos.value <= 1984) {
+            alert('Dr. Sócrates')
+
+        
+        } else if (anos.value >= 1988 && anos.value <= 1997) {
+            alert('Ronaldo')
+
+
+        } else if (anos.value >= 1994 && anos.value <= 2001) {
+            alert('Marcelinho carioca')
+
+
+        } else if (anos.value >= 2008 && anos.value <= 2012) {
+            alert('Chicão')
+
+
+        } else if (anos.value >= 2012 && anos.value <= 2020) {
+            alert('Cassio')
 
         } else {
-            alert("Deu ruim");
-            bravo.style = 'display: block;';
+            alert('Você não nasceu em nenhum ano das atuações dos maiores idolos do Corinthians')
         }
+
     }
 </script>
