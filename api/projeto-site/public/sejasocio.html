@@ -32,27 +32,30 @@
     <div class="tudo">
         <div class="caixacadastro">
             <div class="campo">
-                <h2>LOGIN</h2>
-                <span><b>EMAIL</b></span><br>
-                <input id="email_novo" type="text" placeholder="Digite seu email"> <br><br>
-                <span><b>SENHA</b></span><br>
-                <input id="senha_nova" type="password" placeholder="Digite sua senha"><br>
-                <button onclick="logar()">LOGIN</button>
-
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <h2>LOGIN</h2>
+                    <span><b>Usuário</b></span><br>
+                    <input id="nome_novo" type="text" placeholder="Digite seu email"> <br><br>
+                    <span><b>SENHA</b></span><br>
+                    <input type="password" class="input-padrao" name="senha"><br>
+                    <button id="btn_entrar" class="btn">Entrar</button>
+                </form>
             </div>
         </div>
 
 
         <div class="caixalogin">
             <div class="campo">
-                <h2>CADASTRE-SE</h2>
-                <span><b>NOME DO USUARIO</b></span><br>
-                <input type="text" placeholder="Digite seu usuario"><br><br>
-                <span><b>EMAIL</b></span><br>
-                <input type="" placeholder="Digite seu email"><br><br>
-                <span><b>SENHA</b></span><br>
-                <input type="password" placeholder="Digite a senha"><br>
-                <button>CADASTRAR</button>
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <h2>CADASTRE-SE</h2>
+                    <span><b>NOME DO USUARIO</b></span><br>
+                    <input type="text" name="login" class="input-padrao" placeholder="Usuário para login"  required minlength="4"><br><br>
+                    <span><b>Login</b></span><br>
+                    <input type="" placeholder="Digite seu email"><br><br>
+                    <span><b>SENHA</b></span><br>
+                    <input type="password" name="senha" class="input-padrao" placeholder="**********"  required minlength="4"><br>
+                    <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
+                </form>
             </div>
         </div>
     </div>
@@ -62,19 +65,98 @@
 </html>
 
 <script>
-    function logar() {
-        var email = email_novo.value;
-        var senha = senha_nova.value;
 
-        if (email.indexOf('@' && '.') != -1 && email.length >= 7) {
-            alert('Email válido')
-        } else {
-            alert('Email inválido')
-        }
+function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'sobre.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
     }
 
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
 
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
 
+function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
 
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
 
 </script>
+
+/* function logar() {
+    var email = nome_novo.value;
+    var senha = senha_nova.value;
+
+    if (email.indexOf('@' && '.') != -1 && email.length >= 7) {
+        alert('Email válido')
+    } else {
+        alert('Email inválido')
+    }
+}*/
