@@ -1,6 +1,7 @@
 /*global*/
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2? family = Exo + 2 & display = swap'); 
+@import url('https://fonts.googleapis.com/css2? family = Exo + 2 & display = swap');
 
 html {
     scroll-behavior: smooth;
@@ -15,7 +16,7 @@ html {
     width: 80%; 
     margin: auto;
     height: 50px;
-    border-bottom: red;
+    
 }
 
 /* Header */
@@ -26,13 +27,13 @@ html {
     border-bottom: coral 8px;
     margin: 0;
     
-    border-radius: 5%;
+   
 }
   
 .header .nav .menu-atual a, 
 .header span{
     /* Cor do texto */
-    color: sandybrown;
+    color: gray;
 }
 
 .title-header img{
@@ -44,7 +45,8 @@ html {
 }
   
 .title-header h1{
-    font-family: 'Syne Mono', monospace;
+    font-family:'Exo 2', sans-serif;
+
 
 }  
   
@@ -69,7 +71,7 @@ html {
     color: #ffffff;
     text-transform: uppercase;
     font-size: 19px;
-    font-family: 'Syne Mono', monospace;
+    font-family:'Exo 2', sans-serif;
 }
   
 .nav li{
@@ -209,17 +211,42 @@ html {
     background-repeat: no-repeat;
     color:white;
     text-align: center;
-    min-height: 600px;
+    min-height: 700px;
     background-attachment: fixed;
   
     
 }
 
+.jogo{
+
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: 'Anton', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.containerjogo{
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 287px;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    float: left;
+    margin-top: 120px;
+    padding-top: 1px;
+    margin-left: 520px;
+    height: 350px;
+}
 
 .containerjogo h1{
-
-    padding-top: 250px;
-
+ padding-top: 120px;
+ color: black;
 
 }
 
@@ -231,7 +258,7 @@ html {
 
 
 .baixo{
-    padding-left: 550px;
+    padding-left: 520px;
 }
 
 
@@ -368,7 +395,7 @@ html {
     margin-top: 140px;
     padding-top: 69px;
     margin-right: 230px;
-    border-bottom: red 8px;
+    
 }
 
 
@@ -385,6 +412,7 @@ html {
  color: white;
  margin-left: 41px;
 }
+
 .caixacadastro h2{
 text-align: center;
 margin: 20px 0 30px;
@@ -401,10 +429,10 @@ margin: 20px 0 30px;
     margin-top: 140px;
     padding-top: 69px;
     margin-left: 250px;
-    border-bottom: red 8px;
+    
 }
 
-.caixalogin button {
+.btn {
  width: 100px;
  height: 40px;
  border: none;
@@ -416,6 +444,7 @@ margin: 20px 0 30px;
  background-color: black;
  color: white;
  margin-left: 41px;
+
 }
 
 .caixalogin h2{
@@ -436,7 +465,7 @@ margin: 20px 0 30px;
 /* Historia */
 
 .combo {
-    background-image: url(../img/fundocombo.jpg);
+    background-image: url(../img/fundocombo2.jpg);
     text-align: center;
     margin: 0 auto;
     font-size: 20px;
@@ -446,7 +475,12 @@ margin: 20px 0 30px;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 700px;
-    
+   
+}
+
+#corinthians {
+ color: white;
+ background-color: black;
 }
 
 .combo2{
@@ -455,6 +489,7 @@ margin: 20px 0 30px;
     margin: 0 auto;
     position: relative;
     bottom: 60px;
+    
    
 }
 

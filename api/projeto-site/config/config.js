@@ -3,7 +3,7 @@ module.exports = {
     username: 'kauevolpe',
     password: '100Zala292944',
     database: 'bancokaue',
-    host: 'bdprojetoindividual',
+    host: 'bdprojetoindividual.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {

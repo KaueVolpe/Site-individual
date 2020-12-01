@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="funcoes.js"></script>
     <title>Corinthiosidades/Inicio</title>
 </head>
 
@@ -34,9 +35,9 @@
         <div class="container">
         </div>
     </div>
-    
 
-    
+
+
     <div class="segundo">
         <div class="box-item">
             <h1>Torcida do timão:</h1>
@@ -52,10 +53,10 @@
     </div>
     <!-- fim SHOW CASE -->
 
-<!--2º parte da página-->
-    
+    <!--2º parte da página-->
 
-    
+
+
     <div class="showcase2">
 
         <div class="container">
@@ -104,15 +105,20 @@
 
         </div>
     </div>
-    <!-- fim 3º parte da página-->
 
-    <div class="showcasejogo"> 
-        <div class="containerjogo">
-            <h1>Vamos Jogar???</h1> <br> <br>
-            <input id="anos" placeholder="Digite sua idade" type="text">
-            <button onclick="ver()">Verificar</button>
+    
+    <!-- fim 3º parte da página-->
+    <div class="caixajogo">
+        <div class="showcasejogo">
+            <div class="containerjogo">
+
+                <h1>Vamos Jogar???</h1> <br> <br>
+                <input id="anos" placeholder="Digite seu ano de nascimento" type="text"> <br> <br> <br>
+                <button class="jogo" onclick="ver()">Verificar</button>
+            </div>
         </div>
     </div>
+    
 
 
 
@@ -137,7 +143,7 @@
         } else if (anos.value >= 1978 && anos.value <= 1984) {
             alert('Dr. Sócrates')
 
-        
+
         } else if (anos.value >= 1988 && anos.value <= 1997) {
             alert('Ronaldo')
 
